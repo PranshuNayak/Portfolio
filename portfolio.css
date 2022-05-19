@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Square+Peg&family=Ubuntu+Mono&family=Water+Brush&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+/*utilities*/
+.center {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.list-group-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 50px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.bg-dark {
+  color: white;
+  background-color: black;
+}
+
+.bg-light {
+  color: black;
+  background-color: #f4f4f4;
+}
+.text-light {
+  color: white;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.section-heading {
+  padding: 20px 0px;
+  font-weight: bolder;
+}
+
+ul {
+  list-style: none;
+}
+
+@keyframes to-fro {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  font-family: "Ubuntu Mono", monospace;
+  position: relative;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.container-fluid section {
+  scroll-snap-type: y mandatory;
+}
+
+.navigate-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1;
+  animation-name: to-fro;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/laptop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.home .container {
+  display: grid;
+  padding: 10px 0px;
+  grid-template-rows: 10% 80% 10%;
+  align-items: center;
+}
+
+.home-buttons {
+  justify-content: space-evenly;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.navbar div {
+  flex-grow: 1;
+}
+
+.logo {
+  font-family: "Water Brush", cursive;
+}
+
+.right-menu {
+  justify-content: center;
+}
+
+.right-menu .btn-2 {
+  display: none;
+}
+.home-showcase {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-buttons a {
+  margin: 0px 10px;
+}
+
+.cross{
+  display: none;
+}
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  padding: 20px 0px;
+}
+
+.about .personal-image {
+  width: 30%;
+  border-radius: 20px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.about .personal-details {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+.about .personal-details ul {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about .personal-details .property-name,
+.property-description,
+i {
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 5px;
+}
+
+.property-name {
+  font: large;
+  font-weight: bold;
+}
+
+.developer .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.developer .container section {
+  margin: 30px 0px;
+  padding: 10px 10px;
+  width: 100%;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+}
+
+.developer .container section .technology-name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.developer .container section .images {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+}
+
+.developer .container section .images .img {
+  height: 150px;
+  border: 20px;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 30px;
+  margin: 40px 0px;
+}
+
+.project .project-desc {
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  width: 50%;
+  padding: 20px 20px;
+  display: grid;
+  grid-template-rows: 20% 50% 10%;
+}
+
+.project .project-desc p {
+  text-align: center;
+}
+
+.project .project-desc div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project .project-image {
+  width: 40%;
+  height: 400px;
+  overflow: hidden;
+  padding: 10px 10px;
+}
+
+.project .project-image img {
+  border-radius: 10px;
+}
+
+.contact .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .container #map {
+  height: 400px;
+  width: 50%;
+}
+
+.contact .container .content {
+  width: 45%;
+  padding: 10px 10px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  display: grid;
+  grid-row: 20% 40% 20%;
+}
+
+.contact .container p {
+  align-self: center;
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.social-links {
+  align-self: flex-end;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .home .container {
+    display: grid;
+    padding: 10px 0px;
+    grid-template-rows: 15% 75% 10%;
+  }
+  .right-menu .btn-1 {
+    display: none;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .home-showcase div p {
+    margin: 5px 0px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .menu {
+    position: absolute;
+    flex-direction: column;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 0;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    opacity: 0.8;
+  }
+  .navbar .menu li{
+    margin: 20px 10px;
+    border-bottom: 0.7px solid black;
+  }
+  .navbar .menu:first-child{
+    border: none;
+  }
+  .cross{
+    display: inline-block;
+  }
+  .navbar .right-menu {
+    justify-content: end;
+  }
+  .navbar .right-menu .btn-2 {
+    display: block;
+    font-size: 20px;
+  }
+  .about .container {
+    flex-direction: column;
+  }
+  .about .container div {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .about .container .personal-image {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .about .container .personal-details h1 {
+    margin-bottom: 20px;
+  }
+  .developer .container section .images .img {
+    margin: 10px 10px;
+  }
+  .contact .container {
+    flex-direction: column;
+  }
+  .contact .container #map {
+    height: 400px;
+    width: 100%;
+  }
+
+  .contact .container .content {
+    width: 100%;
+    height: 300px;
+    grid-row: 20% 60% 20%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+  .home .container {
+    grid-template-rows: 10% 70% 20%;
+  }
+
+  .about .container{
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .home-buttons li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .project .project-image {
+    display: none;
+  }
+  .project .project-desc {
+    width: 100%;
+  }
+
+  .project .project-desc div,
+  p,
+  h1 {
+    margin: 10px 0px;
+  }
+
+  .project .project-desc {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
