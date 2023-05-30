@@ -46,3 +46,7 @@
     menu.style.width="0px";
     menu.style.transition="width 1s ease";
   })
+
+  //setting the age
+  let ageComponent = document.getElementById('current-age')
+  ageComponent.innerHTML = new Date().getFullYear()-2002
